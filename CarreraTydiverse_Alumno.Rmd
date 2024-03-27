@@ -257,13 +257,11 @@ top_count_sorted
 
 ```{r}
 
-
-
-
-
-
-
-
+top_unique_sorted <- pack_sum %>% filter(.unique >
+                                           quantile(.unique,
+                                                    probs = 0.99)) %>% arrange(desc(.unique))
+top_unique_sorted
+  
 ```
 25. Completa lo que se indica  usando `pipes`. Selecciona las columnas `ip_id, country, package, size` de `cran` y muestra el resultado por pantalla usando `print`. No es necesario almacenar.
 
