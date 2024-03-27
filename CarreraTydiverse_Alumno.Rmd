@@ -279,7 +279,7 @@ cran
 
 27. Selecciona aquellas descargas cuyo tamaño es menor o igual que 0.5 Mbytes
 ```{r}
-
+cran %>% filter(size_mb >= 0.5)
 
 
 ```
